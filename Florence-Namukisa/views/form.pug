@@ -1,0 +1,96 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Assessment Form
+  link(rel='stylesheet' href='/css/style.css')
+.form-container
+  img(src='/images/header.png' width='100%')
+  form#registrationForm(action='/form' method='POST')
+    .main-grid
+      .column
+        .row
+          .heading-separator
+            label(for='title') PASSENGER INFORMATION
+          .row
+            label(for='fullName')
+              | Full Name 
+              span.required *
+            input#fullName(type='text' name='fullName')
+            span.error-message.hidden Invalid field
+          .row
+            label(for='gender')
+              | Gender 
+              span.required *
+            input#gender(type='text' name='gender')
+            span.error-message.hidden Invalid field
+          .row
+            label(for='dateOfBirth')
+              | Date of Birth 
+              span.required *
+            input#dateOfBirth(type='text' name='dateOfBirth')
+            span.error-message.hidden Invalid field
+          .row
+            label(for='nationality')
+              | Nationality 
+              span.required *
+            input#nationality(type='text' name='nationality')
+            span.error-message.hidden Invalid field
+      .column
+        .row
+          .heading-separator
+            label(for='info') CONTACT INFORMATION
+          .row
+            label(for='phoneNumber')
+              | Phone Number 
+              span.required *
+            input#phoneNumber(type='text' name='phoneNumber')
+            span.error-message.hidden Invalid field
+          .row
+            label(for='email')
+              | Email Address 
+              span.required *
+            input#email(type='text' name='email')
+            span.error-message.hidden Invalid field
+          .row
+            label(for='pNumber')
+              | P.O. BOX Number 
+              span.required *
+            input#pNumber(type='text' name='pNumber')
+            span.error-message.hidden Invalid field
+          .row
+            label(for='emergency')
+              | Emergency Phone Number 
+              span.required *
+            input#emergency(type='text' name='emergency')
+            span.error-message.hidden Invalid field
+      .column
+        .row
+          .heading-separator
+            label(for='rinfo') FLIGHT INFORMATION
+          .row
+            label(for='passNumber')
+              | Passport Number 
+              span.required *
+            input#passNumber(type='text' name='passNumber')
+            span.error-message.hidden Invalid field
+          .row
+            label(for='visa')
+              | Visa Document 
+              span.required *
+            input#visa(type='text' name='visa')
+            span.error-message.hidden Invalid field
+          .row
+            label(for='city')
+              | Department City 
+              span.required *
+            input#city(type='text' name='city')
+            span.error-message.hidden Invalid field
+          .row
+            label(for='dCity')
+              | Destination City 
+              span.required *
+            input#dCity(type='text' name='dCity')
+            span.error-message.hidden Invalid field
+    button(type='submit') SUBMIT
+script(src='/js/form.js')

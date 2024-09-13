@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Form</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <img src="../public/images/header.png" width="700px">
+        <form id="registrationForm">
+            <div class="main-grid">
+                <div class="column">
+                    <div class="row">
+                        <div class="heading-separator">
+                            <label for="title">PASSENGER INFORMATION</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName">
+                    </div>
+                    <div class="row">
+                        <label for="gender">Gender <span class="required">*</span></label>
+                        <input type="text" id="gender" name="gender">
+                    </div>
+                    <div class="row">
+                        <label for="dateOfBirth">Date of Birth <span class="required">*</span></label>
+                        <input type="text" id="dateOfBirth" name="dateOfBirth">
+                    </div>
+                    <div class="row">
+                        <label for="nationality">Nationality <span class="required">*</span></label>
+                        <input type="text" id="nationality" name="nationality">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="row">
+                        <div class="heading-separator">
+                            <label for="info">CONTACT INFORMATION</label>
+                        </div>
+                        <input type="text" id="info" name="info">
+                    </div>
+                    <div class="row">
+                        <label for="phoneNumber">Phone Number <span class="required">*</span></label>
+                        <input type="number" id="phoneNumber" name="phoneNumber">
+                    </div>
+                    <div class="row">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="row">
+                        <label for="pNumber">P.O. BOX Number <span class="required">*</span></label>
+                        <input type="text" id="pNumber" name="pNumber">
+                    </div>
+                    <div class="row">
+                        <label for="emergency">Emergency Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="emergency" name="emergency">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="row">
+                        <div class="heading-separator">
+                            <label for="rinfo">FLIGHT INFORMATION</label>
+                        </div>
+                        <input type="text" id="rinfo" name="rinfo">
+                    </div>
+                    <div class="row">
+                        <label for="passNumber">Passport Number <span class="required">*</span></label>
+                        <input type="text" id="passNumber" name="passNumber">
+                    </div>
+                    <div class="row">
+                        <label for="visa">Visa Document <span class="required">*</span></label>
+                        <input type="text" id="visa" name="visa">
+                    </div>
+                    <div class="row">
+                        <label for="city">Department City <span class="required">*</span></label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div class="row">
+                        <label for="dCity">Destination City <span class="required">*</span></label>
+                        <input type="text" id="dCity" name="dCity">
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="../public/js/form.js"></script>
+</body>
+</html>
